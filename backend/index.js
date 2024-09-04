@@ -19,16 +19,6 @@ app.use('/api/cocktails', cocktailRoutes);
 app.use('/api/desserts', dessertRoutes);
 app.use('/api/auth', authRoutes);
 
-// redirect to html
-if (process.env.NODE_ENV === 'production') {
-    app.use(express.static(path.join(__dirname, '../frontend/build')));
-
-    // if the request does not match api route, serve the index.html file
-    app.get('*', (req, res) => {
-        res.sendFile(path.resolve(__dirname, '../frontend', 'build', 'index.html'));
-    });
-}
-
 // mongo connection
 const mongoURI = 'mongodb+srv://khalankimle:5vAMvST8iWrhjxuf@mongopractice.dlgeczi.mongodb.net/<YourDatabaseName>'; // Ensure to include the database name
 mongoose.connect(mongoURI, {
