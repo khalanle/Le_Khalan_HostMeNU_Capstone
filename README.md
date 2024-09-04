@@ -1,7 +1,7 @@
 # Le_Khalan_HostMeNU_Capstone
 
 Hi! Welcome to Host Me N U! 
-Because of my lofe for hosting, cooking, and creating I decided to make an application to help me host my next dinner party.
+Because of my love for hosting, cooking, and creating I decided to make an application to help me host my next dinner party.
 
 This tool will allow you to organize and plan a dinner menu. In the application, you will be able to access your own personal database of entrees, cocktails, and desserts. Here, you can update, or change or delete these recipes, and generate a menu for guests!
 
